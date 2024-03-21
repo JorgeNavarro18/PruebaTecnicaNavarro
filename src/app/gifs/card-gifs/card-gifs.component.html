@@ -1,0 +1,10 @@
+<div class="row">
+  <div *ngFor="let resultado of resultados" class="card" class="col-md-3 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" [src]="resultado.images.downsized_medium.url" [alt]="resultado.title">
+        <p class="card-text">{{resultado.title}}</p>
+      </div>
+    </div>
+  </div>
+</div>
